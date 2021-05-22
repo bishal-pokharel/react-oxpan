@@ -1,0 +1,40 @@
+.content{
+    margin: 30px;
+}
+.des-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.des-content img{
+  width: 40%;    
+}
+.des-content p{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2.5rem;
+    word-spacing: 0.8em;
+    padding-left: 40px;
+}
+.features{
+    margin: 35px;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.list-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+@media(max-width:992px){
+    .des-content p{
+        word-spacing: 0.5em;
+        line-height: 2rem;
+    }
+}
+@media(max-width:768px){
+    .des-content{
+        flex-wrap: wrap;
+    }
+}

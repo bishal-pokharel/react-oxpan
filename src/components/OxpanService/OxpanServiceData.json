@@ -1,0 +1,83 @@
+
+
+[
+    {
+        "id":"desktop-software",
+        "imageURL":"shop.jpg",
+        "Heading":"Desktop Software",
+        "quote":"Desktop Software for your Business...",
+        "para":"Our Team are always eager to develop Desktop Software for your business. There are our many desktop software for your business and many customers are using our product proudly. Our team are ready to take challenge to introduce new product and updated the new features of existing software.",
+        "features":[
+            "Timely Deliver",
+            "User Friendly",
+            "Easy to Use",
+            "Flexible Price"
+        ]
+    },
+    {
+        "id":"web-service",
+        "imageURL":"shop.jpg",
+        "Heading":"Website Development",
+        "quote":"Get your Website at affordable Price...",
+        "para":"Now a days, Every company want to be a digitalized. Every company need a website and Oxpan is ready to build a static and dynamic website for your business.There are a range of website standard which is under bellow:",
+        "features":[
+            "Timely Deliver",
+            "User Friendly",
+            "Easy to Use",
+            "Flexible Price"
+        ]
+    },
+    {
+        "id":"Andriod-service",
+        "imageURL":"shop.jpg",
+        "Heading":"Android App Development",
+        "quote":"Android Application For your Work..",
+        "para":"Oxpan is one of the Best IT companies in Nepal. We work for changing your project idea into an iOS or Android app. We transform your project idea into mobile apps. We have now Cooperative mobile Banking facilities. We provide you a best service of Android Application.",
+        "features":[
+            "Timely Deliver",
+            "User Friendly",
+            "Easy to Use",
+            "Flexible Price"
+        ]
+    },
+    {
+        "id":"web-hosting",
+        "imageURL":"shop.jpg",
+        "Heading":"Web Hosting",
+        "quote":"We are ready to host your Website...",
+        "para":"We provide the facilities to public your website in internet. Our team are ready to make your website and host the website in internet at suitable price. And also Oxpan team updated your website as per your requirement and provide the best services to our clients.",
+        "features":[
+            "Attractive User Interface",
+            "User Friendly",
+            "Timely Deliver",
+            "Quality Product",
+            "SEO"
+        ]
+    },
+    {
+        "id":"cloud-service",
+        "imageURL":"shop.jpg",
+        "Heading":"Cloud Service",
+        "quote":"We provide you a Cloud facility..",
+        "para":"OXPAN Team provides the cloud facility to our Cooperative clients. Cloud Facility helps to move your business forward so that our team provided the clouse facilities to our client.",
+        "features":[
+            "More Secure",
+            "No Chance for Data losses",
+            "Useful in Multi branch Purpose",
+            "Data access from anywhere"
+        ]
+    },
+    {
+        "id":"sms-service",
+        "imageURL":"shop.jpg",
+        "Heading":"SMS Service",
+        "quote":"We provide you a SMS facility..",
+        "para":"Oxpan Team provided the SMS facilities to our clients. The SMS facilities which helps to make your Business more Useful and reliable. So the Oxpan provides The SMS facilities to",
+        "features":[
+            "Unlimited Messages",
+            "Time Flexible",
+            "Rechargeable",
+            "Flexible Price"
+        ]
+    }
+]

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Goldplus from './components/goldplus/Goldplus';
+import ScrollToTop from './components/ScrollToTop';
+import OxpanService from './components/OxpanService/OxpanService';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <NavBar />
+      <ScrollToTop />
+        <Switch>
+          <Route path="/" exact component={Header} />
+          {/* <Route path="/goldplus" component={Goldplus}/> */}
+          <Route path="/product/:topic" component={Goldplus}/>
+          <Route path="/service/:id" exact component={OxpanService}/>
+        </Switch>
+        <Footer />
+      </Router> 
     </div>
   );
 }
