@@ -2,6 +2,7 @@
     {
         "id":"goldplus",
         "image":"{goldplusImg}",
+        "topic":"OXPAN Cooperative goldplus",
         "title":"Specific features of OXPAN Cooperator",
         "description":"Oxpan cooperator is a banking and accounting software developed for co-operatives. It is developed by an expert team of developers under regular collaboration and guidance of cooperative specialists and banking professionals.For the first time Charkhata Based Accounting is introduced by OXPAN Cooperator. Oxpan Cooperator is applicable to all versions of Microsoft Windows in networking or in single computer environment as well as for cooperatives of multi-user environment (many counters) as well as many branches also.",
         "list":[
@@ -29,6 +30,7 @@
     {
         "id":"micos",
         "image":"{goldplusImg}",
+        "topic":"OXPAN MiCOS",
         "title":"Specific features of OXPAN Cooperator MiCOS",
         "description":"Oxpan cooperator is a banking and accounting software developed for co-operatives. It is developed by an expert team of developers under regular collaboration and guidance of cooperative specialists and banking professionals.For the first time Charkhata Based Accounting is introduced by OXPAN Cooperator . Oxpan Cooperator is applicable to all versions of Microsoft Windows in networking or in single computer environment as well as for cooperatives of multi-user environment (many counters) as well as many branches also.",
         "list":[
@@ -57,7 +59,8 @@
     {
         "id":"dugdha",
         "image":"{goldplusImg}",
-        "title":"",
+        "topic":"OXPAN Dugdha",
+        "title":"Specific features of OXPAN Cooperator Dudgha",
         "description":"Milk Production Cooperatives have two major duties, cooperative banking and milk collection. Cooperator Dugdha is for both activities in integrated way. Members are farmers and farmers are sellers so every farmers transaction is integrated with cooperative members. A farmer at the same time is a seller and a customer aslo. Thesse dugdha cooperatives may provide livestock and agriculture loans to the farmers. These activities are handled by Cooperator Dugdha program. Milk collection account is created as a farmers. Milk collected from on a counter and milk transaction is entered in computers with quality fat and SNF. Milk collection statements are provided periodically. The cost milk is paid on their accounts in the cooperative in weekly or monthly basis.",
         "list":[
             "Applies All Dugdha Collection Cooperatives.",
@@ -85,6 +88,7 @@
     {
         "id":"Allmart",
         "image":"{goldplusImg}",
+        "topic":"OXPAN AllMart",
         "title":"Specific features of OXPAN ALLMart",
         "description":"Our business activities need proper care. Every business seeks a reliable accountant. OXPAN AllMart is developed to care many common enterprises which are involved in purchase and sales or sales only (service providers). A business is started with its investment by collecting shares. Then business starts making the workplace or factory. purchases goods and stores in a store. goods are delivered to shopping centers or in factories. New goods may also be prepared and resent to store. Goods are sold to the customers. Or services are created and sold to the customers. These all activities are to make a good profit and progress of business. Every steps of such economic activities should be recorded so that we could get the progress report as.",
         "list":[
@@ -106,6 +110,7 @@
     {
         "id":"Coopmart",
         "image":"{goldplusImg}",
+        "topic":"OXPAN CoopMart",
         "title":"Specific features of OXPAN CoopMart",
         "description":"We can conduct shop for our members. We can give account ID and a card. We can provide facilities to purchase from the mart and pay from the account with some discount. We ca it for the our customers the mart in cooperatives. Purchase from your member or sell to your members or do both for members. Sales book, purchase book stock, profit and loss all integrated with cooperative. Those cooperatives need OXPAN CoopMart. Our business activities need proper care. Every business seeks a reliable accountant. OXPAN CoopMart is developed to care business activities conducted by cooperatives which are involved in purchase and sales or sales only (service providers). A cooperative shop runs with the capital from the cooperative0 . Then business starts making the workplace or factory. purchases goods and stores in a store. goods are delivered to shopping centers or in factories",
         "list":[

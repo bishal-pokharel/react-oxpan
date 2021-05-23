@@ -2,12 +2,14 @@ import React from 'react';
 import {Servicedata} from '../data/ServiseData';
 import Cards from '../components/Cards';
 import image1 from '../images/shop.jpg';
+import bgimg from '../images/bg1.svg';
 
 function Service(props){
 
     return(
         <div className="service">
             <h1>OXPAN Software for your Business</h1>
+            <img className="body-bg" src={bgimg} alt="background" />
         <div className="service-container">
         {Servicedata.map((data)=>{
             return(

@@ -24,6 +24,61 @@ ul{
 a{
     text-decoration: none;
   }
+
+  /* ****************** HEADER CSS   ********************** */
+  .frontdiv h1{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 37%;
+    font-size: 4rem;
+    color: rgb(7, 87, 107);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-right: .15em solid rgb(211, 175, 109);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(14, end),
+                blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+      from{
+          width: 0;
+      }
+      to {width: 37%;}   
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+    
+  }
+  .frontdiv p{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    width: 33%;
+    font-size: 2.2rem;
+    color: rgb(45, 52, 119);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0;
+    /* border-right: .15em solid orange; */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing2 4.5s steps(32, end) 4.5s forwards;
+  }
+  @keyframes typing2 {
+    from{
+        opacity: 1;
+        width: 0;
+    }
+    to {width: 35%;
+        opacity: 1;
+    } 
+}
+  /* *****************eND HEADER CSS ********************  */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -49,7 +104,9 @@ nav > ul li a:hover{
     background-color: antiquewhite;
     color: orange;
 }
-.sub-service{
+.sub-service,
+.sub-product,
+.sub-company{
     flex-direction: column;
     color: orange;
     display: flex;
@@ -63,13 +120,40 @@ nav > ul li a:hover{
     /* padding: 6px; */
     background-color: black;
 }
+.sub-product li{
+    /* padding: 6px; */
+    background-color: black;
+}
+.sub-company li{
+    /* padding: 6px; */
+    background-color: black;
+    width: 140px;
+}
 .sub-service li a{
+    font-size: 1rem;
+}
+.sub-product li a{
+    font-size: 1rem;
+}
+.sub-company li a{
     font-size: 1rem;
 }
 .sub-service li a:hover{
     background-color: gray;
 }
+.sub-product li a:hover{
+    background-color: gray;
+}
+.sub-company li a:hover{
+    background-color: gray;
+}
 .o-service:hover .sub-service{
+    display: block;
+}
+.o-product:hover .sub-product{
+    display: block;
+}
+.o-company:hover .sub-company{
     display: block;
 }
 .main{
@@ -84,127 +168,7 @@ nav > ul li a:hover{
     display: none;
 }
 
-@media (max-width:1080px){
-    .menu-icon{
-        display: block;
-    }
-    nav{
-        justify-content: space-between;
-        /* height: 9%; */
-        padding: 0px 30px;
-    }
-    .logo{
-        width: 100px;
-    }
-    .menu{
-        position: absolute;
-        width: 100%;
-        top: 76px;
-        left: 0;
-        /* height: 45px; */
-        background-color:rgba(0,0,0,0.6);
-        border-bottom: 4px solid orange;
-        margin: 0;
-        padding: 0;
-        display: none;
-    }
-    .menu li{
-        width: 100%;
-    }
-    nav .menu li a{
-        color: white;
-        width: 100%;
-        height: 25px;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-        padding: 25px;
-        border: 1px solid rgba(38,38,38,0.03);
-    }
-    nav .menu li a:hover{
-        background-color: white;
-    }
-    nav .menu-icon{
-        cursor: pointer;
-        float: right;
-        position: relative;
-        user-select: none;
-        padding: 25px 65px;
-    }
-    nav .menu-icon .nav-icon{
-        width: 28px;
-        height: 3px;
-        background: white;
-        display: block;
-        position: relative;
-        transition: background 0.2s ease-in;
-    }
-    nav .menu-icon .nav-icon::before,
-    nav .menu-icon .nav-icon::after{
-        background: white;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: all ease-out 0.2s;
-        width: 100%;
-    }
-    nav .menu-icon .nav-icon::before{
-        top: -7px;
-    }
-    nav .menu-icon .nav-icon::after{
-        top: 7px;
-    }
-    nav .menu-btn:checked ~ .menu-icon .nav-icon{
-        background-color: transparent;
-    }
-    nav .menu-btn:checked ~ .menu-icon .nav-icon::before{
-        transform: rotate(-45deg);
-        top: 0;
-    }
-    nav .menu-btn:checked ~ .menu-icon .nav-icon::after{
-        transform: rotate(45deg);
-        top: 0;
-    }
-    nav .menu-btn{
-        display: none;
-    }
-    nav .menu-btn:checked ~ .menu{
-        display: block;
-      }
-}
 
-/* @media screen and (min-aspect-ratio: 4/3) {
-	.fs-3{
-		font-size: 3vh;
-	}
-	.fs-4, .textInSp {
-		font-size: 4vh;
-	}
-	.fs-5{
-		font-size: 5.5vh;
-	}
-	.fs-7{
-		font-size: 7vh;
-	}
-  
-} */
-
-/* @media screen and (max-aspect-ratio: 4/3) {
-	.fs-3{
-		font-size: 2vw;
-	}
-	.fs-4, .textInSp {
-		font-size: 2vw;
-	}
-	.fs-5{
-		font-size: 3.1vw;
-	}
-	.fs-7{
-		font-size: 4vw;
-	}
-  
-} */
 .bgimg{
     object-fit: cover;
     overflow: hidden;
@@ -216,7 +180,7 @@ nav > ul li a:hover{
     position: absolute;
     width: 100%;
     height: 100vh;
-     background-color: rgba(0, 0, 0, 0.6);
+     background-color: rgba(0, 0, 0, 0.2);
 }
 /* css for service */
 .service{
@@ -235,6 +199,16 @@ nav > ul li a:hover{
     justify-content: space-around;
     align-items: center;
     flex-flow: wrap;
+}
+.body-bg{
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    top: 0;
+    left: -7%;
+    object-fit: cover;
+    background-repeat: repeat;
+    opacity: 0.2;
 }
 .card{
     display: flex;
@@ -359,6 +333,161 @@ footer i:hover{
     letter-spacing: 8px;
     width: 63%;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.contact-us{
+    margin: 70px;
+}
+.contact-us h2{
+    font-size: 2rem;
+}
+address{
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.contact-icon-div{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin-top: 10px;
+}
+.contact-icon-div a{
+    color: #404040;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.contact-icon-div a:hover{
+    color: green;
+}
+.map{
+    margin-top: 40px;
+    width: 100%;
+    height: 50vh;
+}
+iframe{
+    border-radius: 20px;
+}
+
+/* css for career component */
+.career-div{
+    margin: 70px;
+}
+.job-des{
+    padding: 10px 10px 10px 30px;
+    background-color: #b4bfbe;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.carrer{
+    padding: 10px;
+    /* display: none; */
+}
+.carrer ul li{
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    cursor: auto;
+    border-bottom: 2px solid gray;
+}
+
+@media (max-width:1080px){
+    .menu-icon{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+        /* height: 9%; */
+        padding: 0px 30px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        top: 76px;
+        left: 0;
+        /* height: 45px; */
+        background-color:rgba(0,0,0,0.6);
+        border-bottom: 4px solid orange;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    .menu li{
+        width: 100%;
+    }
+    nav .menu li a{
+        color: white;
+        width: 100%;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid rgba(38,38,38,0.03);
+    }
+    nav .menu li a:hover{
+        background-color: white;
+    }
+    nav .menu-icon{
+        cursor: pointer;
+        float: right;
+        position: relative;
+        user-select: none;
+        padding: 25px 65px;
+    }
+    nav .menu-icon .nav-icon{
+        width: 28px;
+        height: 3px;
+        background: white;
+        display: block;
+        position: relative;
+        transition: background 0.2s ease-in;
+    }
+    nav .menu-icon .nav-icon::before,
+    nav .menu-icon .nav-icon::after{
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width: 100%;
+    }
+    nav .menu-icon .nav-icon::before{
+        top: -7px;
+    }
+    nav .menu-icon .nav-icon::after{
+        top: 7px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon{
+        background-color: transparent;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon::before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .menu-btn{
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu{
+        display: block;
+      }
+
+      .frontdiv h1{
+          font-size: 2.7rem;
+      }
+      .frontdiv p{
+        font-size: 1.6rem;
+    }
 }
 @media(max-width:948px){
     .service-container{
@@ -374,6 +503,12 @@ footer i:hover{
     .footerdiv{
         flex-wrap: wrap;
     }
+    .frontdiv h1{
+        font-size: 1.8rem;
+    }
+    .frontdiv p{
+      font-size: 1.1rem;
+  }
 }
 @media(max-width:600px){
     .card{
@@ -382,4 +517,10 @@ footer i:hover{
      .service h1{
         font-size: 1.5rem;
     }
+    .frontdiv h1{
+        display: none;
+    }
+    .frontdiv p{
+      display: none;
+  }
 }
